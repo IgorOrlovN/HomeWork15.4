@@ -11,6 +11,7 @@ void f()
 	std::cout << "Vvedite chislo ot 0 do 100: ";
 	std::int16_t N;
 	std::cin >> N;
+
 	if (N % 2 == 0)
 	{
 		int i = 0;
@@ -18,17 +19,18 @@ void f()
 		{
 			i = i + 2;
 			std::cout << i << "\n";
+			
 		}
+
 	}
-	else
+	
+	int i = -1;
+	while (i < N)
 	{
-		int i = -1;
-		while (i<N)
-		{
-			i = i + 2;
-			std::cout << i << "\n";
-		}
+		i = i + 2;
+		std::cout << i << "\n";
 	}
+	
 
 }
 
